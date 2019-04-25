@@ -1,0 +1,4 @@
+get-childitem *.png,*.jpg,*.gif,*.jpeg,*.tiff,*.img,*.bmp -recurse | foreach-object {move-item $_ -destination F:\IMAGES}
+
+
+get-childitem *.txt,*.doc,*.xls,*.lsf,*.xml,*.csv,*.py,*.lua -recurse | foreach-object {move-item $_ -destination C:\Users\devin\Desktop\DSxDESKTOP\Games\_TexNoDocs}

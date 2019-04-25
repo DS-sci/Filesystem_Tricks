@@ -1,0 +1,13 @@
+'''
+Script derived from:
+https://stackoverflow.com/questions/37467561/renaming-multiple-files-in-a-directory-using-python
+by: https://stackoverflow.com/users/6387050/noteness
+'''
+
+import os
+path = 'D:\\Programs RS\\GOG Galaxy\\Games\\Divinity - Original Sin Enhanced Edition\\Data\\Public\\DSmodGOG2_11b53c2d-2b8d-432d-9851-5c6a6d61af9a\\RootTemplates'
+files = os.listdir(path)
+
+for file in files:
+    os.rename(os.path.join(path, file), os.path.join(path, str("DS_") + str(file)))
+exit()

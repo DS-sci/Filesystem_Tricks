@@ -1,0 +1,4 @@
+dir $b -File -Recurse | foreach{
+    $folder = Join-Path c:\alphabet $_.Name[0]
+    md $folder -force | Out-Null
+}  
